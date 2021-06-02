@@ -12,6 +12,8 @@
     <link rel="stylesheet" href="font/fontaswesome/css/all.css">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/animation2.css">
     <link rel="stylesheet" href="owlcarousel/assets/owl.theme.default.css">
     <link rel="stylesheet" href="owlcarousel/assets/owl.carousel.min.css">
@@ -47,103 +49,13 @@
 
     <!-- CSS -->
     <style>
+    
         #wrapper {
 
             position: relative;
         }
 
-        /* CSS HEADER */
-        #header {
-            background-color: white;
-            display: flex;
-            padding-top: 30px;
-            padding-bottom: 20px;
-            padding-right: 200px;
-            padding-left: 60px;
-            justify-content: center;
-            /* min-height: 350px; */
-        }
-
-        #main-menu {
-            padding-top: 30px;
-            display: inline-flex;
-        }
-
-        #menu-header-button>a {
-            position: relative;
-            text-decoration: none;
-            font-size: 17px;
-            padding: 5px 20px;
-            display: block;
-            color: #737372;
-            text-transform: uppercase;
-            font-weight: bold;
-            transition: 0.2s;
-        }
-
-        #menu-header-button>a:hover {
-            color: black;
-            transform: scale(1.1);
-            border-bottom: 3px solid #d9c066;
-        }
-
-        .menu {
-            position: relative;
-
-        }
-
-        .sub-menu {
-            margin-top: 10px;
-            list-style: none;
-            padding: 0px;
-
-        }
-
-        ul.sub-menu a {
-
-            position: relative;
-            display: none;
-            color: white;
-            text-transform: uppercase;
-            text-align: left;
-            font-size: 13px;
-            line-height: 40px;
-            font-weight: 500;
-            padding: 10px;
-            background-color: #d9c066;
-            opacity: 0.85;
-            transition: all 0.5s;
-
-        }
-
-        .menu:hover a {
-            display: block;
-            transition: all 0.5s;
-
-        }
-
-        ul.sub-menu a:hover {
-            color: black;
-            font-weight: 500;
-        }
-
-
-        #contact {
-            margin-top: 25px;
-            display: block;
-            height: 47px;
-            width: 154px;
-            color: white;
-            text-transform: uppercase;
-            text-align: center;
-            font-weight: bold;
-            background-image: url(images/contact\ button.png);
-            background-size: contain;
-            padding-top: 10px;
-            margin-left: 25px;
-        }
-
-        /* CSS HEADER */
+        
 
         /* CSS CONTENT */
 
@@ -190,6 +102,9 @@
             margin: 0px auto;
             margin-top: 0px;
         }
+        .high-light>a{
+            text-decoration: none;
+        }
 
         .high-light-box {
             width: 300px;
@@ -197,7 +112,6 @@
             /* background-color: tomato; */
             margin: 0px 10px;
             display: flex;
-
             flex-wrap: wrap;
             justify-content: space-between;
             align-content: space-between;
@@ -206,7 +120,12 @@
 
         .high-light-box:hover {
             transform: scale(1.1);
-            background-color: rgb(240, 240, 240);
+            background-color: rgb(240, 240, 240);            
+        }
+
+        .high-light-box:hover>.high-light-text>p{
+            text-decoration: none;
+            
         }
 
         .high-light-images {
@@ -214,7 +133,7 @@
             width: 300px;
         }
 
-        .high-light-text {
+        .high-light-text>p{
             margin-top: 15px;
             display: block;
             width: 300px;
@@ -222,9 +141,11 @@
             text-align: center;
             font-weight: bold;
             font-size: 17px;
-            color: #444444;
+            color: #4b4b4b;
+            text-decoration: none;
 
         }
+        
 
         .high-light-symbol {
             margin-left: 125px;
@@ -449,94 +370,7 @@
 
         /* CSS CONTENT */
 
-        /* CSS FOOTER */
 
-        #footer {
-            /* width: 1920px; */
-            display: flex;
-            flex-wrap: nowrap;
-            height: 150px;
-            background-color: #5b5b5b;
-            align-content: center;
-            justify-content: center;
-            margin: 0px auto;
-            /* padding-bottom: 20px; */
-        }
-
-        #logo-footer {
-            display: block;
-            box-sizing: border-box;
-            width: 150px;
-            margin: 15px 70px;
-            /* background-color: yellow; */
-
-        }
-
-        #menu-footer {
-            box-sizing: border-box;
-            width: 280px;
-            display: flex;
-            flex-wrap: wrap;
-            margin-left: 30px;
-            margin-top: 10px;
-
-        }
-
-        .menu-footer-button {
-            width: 120px;
-            height: 30px;
-            box-sizing: border-box;
-            color: white;
-            margin: 10px;
-            text-align: left;
-            text-transform: uppercase;
-            font-size: 18px;
-            transition: 0.2s;
-        }
-
-        .menu-footer-button:hover {
-            font-size: 18px;
-            color: #d9c066;
-            text-decoration: none;
-            transform: scale(1.1);
-
-        }
-
-        #address {
-            color: white;
-            display: block;
-            margin-left: 200px;
-            margin-top: 20px;
-            padding-left: 20px;
-            font-size: 20px;
-            line-height: 30px;
-            box-sizing: border-box;
-            width: 650px;
-            background-image: url(images/que.png);
-            background-position: left;
-            background-repeat: no-repeat;
-            background: size 5px;
-
-        }
-
-
-        /* CSS FOOTER END */
-
-        /* CSS COPYRIGHT START*/
-        #copyright {
-            /* display: flex;
-            justify-content: center; */
-            color: white;
-            background-color: #5b5b5b;
-            height: 120px;
-            text-align: center;
-            padding-top: 20px;
-            font-size: 17px;
-            box-sizing: border-box;
-
-        }
-
-        /* CSS COPYRIGHT END*/
         #backtop {
             width: 120px;
             height: 30px;
@@ -651,26 +485,38 @@
             </div>
         </div>
         <div class="high-light">
-            <div class="high-light-box">
-                <div class="high-light-text"> SẢN PHẨM VÀ ỨNG DỤNG</div>
-                <div class="high-light-symbol"><img src="images/symbol.png" alt=""> </div>
-                <div class="high-light-images"><img src="images/hight-light-1.png" alt=""> </div>
-            </div>
-            <div class="high-light-box">
-                <div class="high-light-text"> VÙNG NGUYÊN LIỆU</div>
-                <div class="high-light-symbol"><img src="images/symbol.png" alt=""> </div>
-                <div class="high-light-images"><img src="images/hight-light-2.png" alt=""> </div>
-            </div>
-            <div class="high-light-box">
-                <div class="high-light-text"> NHÀ MÁY SẢN XUẤT</div>
-                <div class="high-light-symbol"><img src="images/symbol.png" alt=""> </div>
-                <div class="high-light-images"><img src="images/hight-light-3.png" alt=""> </div>
-            </div>
-            <div class="high-light-box">
-                <div class="high-light-text">SỨ MỆNH</div>
-                <div class="high-light-symbol"><img src="images/symbol.png" alt=""> </div>
-                <div class="high-light-images"><img src="images/hight-light-4.png" alt=""> </div>
-            </div>
+            <a href="">
+                <div class="high-light-box">
+                    <div class="high-light-text"> <p>SẢN PHẨM VÀ ỨNG DỤNG</p>  </div>
+                    <div class="high-light-symbol"><img src="images/symbol.png" alt=""> </div>
+                    <div class="high-light-images"><img src="images/hight-light-1.png" alt=""> </div>
+                </div>
+            </a>
+            
+            <a href="resource.html">
+                <div class="high-light-box" >
+                    <div class="high-light-text"> <p>VÙNG NGUYÊN LIỆU</p></div>
+                    <div class="high-light-symbol"><img src="images/symbol.png" alt=""> </div>
+                    <div class="high-light-images"><img src="images/hight-light-2.png" alt=""> </div>
+                </div>
+            </a>
+            
+            <a href="factory.html">
+                <div class="high-light-box">
+                    <div class="high-light-text"> <p>NHÀ MÁY SẢN XUẤT</p> </div>
+                    <div class="high-light-symbol"><img src="images/symbol.png" alt=""> </div>
+                    <div class="high-light-images"><img src="images/hight-light-3.png" alt=""> </div>
+                </div>
+            </a>
+            
+            <a href="intro.html">
+                <div class="high-light-box">
+                    <div class="high-light-text"> <p>SỨ MỆNH</p></div>
+                    <div class="high-light-symbol"><img src="images/symbol.png" alt=""> </div>
+                    <div class="high-light-images"><img src="images/hight-light-4.png" alt=""> </div>
+                </div>
+            </a>
+            
         </div>
         <div class="welcome">
             <div class="welcome-greeting">
@@ -727,7 +573,7 @@
 
             </div>
             <div class="resouce-seemore">
-                <a href="product.html">XEM THÊM</a>
+                <a href="factory.html">XEM THÊM</a>
             </div>
         </div>
     </div>

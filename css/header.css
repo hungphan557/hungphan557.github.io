@@ -1,0 +1,92 @@
+/* CSS HEADER */
+#header {
+    background-color: white;
+    display: flex;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    padding-right: 200px;
+    padding-left: 60px;
+    justify-content: center;
+    /* min-height: 350px; */
+}
+
+#main-menu {
+    padding-top: 30px;
+    display: inline-flex;
+}
+
+#menu-header-button>a {
+    position: relative;
+    text-decoration: none;
+    font-size: 17px;
+    padding: 5px 20px;
+    display: block;
+    color: #737372;
+    text-transform: uppercase;
+    font-weight: bold;
+    transition: 0.2s;
+}
+
+#menu-header-button>a:hover {
+    color: black;
+    transform: scale(1.1);
+    border-bottom: 3px solid #d9c066;
+}
+
+.menu {
+    position: relative;
+
+}
+
+.sub-menu {
+    margin-top: 10px;
+    list-style: none;
+    padding: 0px;
+
+}
+
+ul.sub-menu a {
+
+    position: relative;
+    display: none;
+    color: white;
+    text-transform: uppercase;
+    text-align: left;
+    font-size: 13px;
+    line-height: 40px;
+    font-weight: 500;
+    padding: 10px;
+    background-color: #d9c066;
+    opacity: 0.85;
+    transition: all 0.5s;
+
+}
+
+.menu:hover a {
+    display: block;
+    transition: all 0.5s;
+
+}
+
+ul.sub-menu a:hover {
+    color: black;
+    font-weight: 500;
+}
+
+
+#contact {
+    margin-top: 25px;
+    display: block;
+    height: 47px;
+    width: 154px;
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: bold;
+    background-image: url(images/contact-button.png);
+    background-size: contain;
+    padding-top: 10px;
+    margin-left: 25px;
+}
+
+/* CSS HEADER */
